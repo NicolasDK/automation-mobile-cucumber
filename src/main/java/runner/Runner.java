@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @CucumberOptions(
 		features = "src/main/resources/features/",
         glue = "steps",
-		plugin = { "pretty"}, 
+		plugin = { "pretty", "html:report/report.html"}, 
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE
 )
