@@ -6,25 +6,37 @@
 	<artifactId>automation-mobile-e2e</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<cucumber.version>6.11.0</cucumber.version>
+		<appium.version>7.4.1</appium.version>
+	</properties>
+
 	<dependencies>
+
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>6.9.1</version>
+			<version>${cucumber.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>7.3.0</version>
+			<version>${appium.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<!-- <scope>test</scope> -->
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.2</version>
 		</dependency>
+
 	</dependencies>
 
 </project>
