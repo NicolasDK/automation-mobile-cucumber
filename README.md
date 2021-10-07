@@ -8,6 +8,14 @@
 
 ## Executar Testes
 
+### Pré-requisitos
+
+1- Adicionar password app no arquivo "src\main\resources\dados.properties"
+
+    password=password_app
+
+### Execução
+
 1 - Iniciar Appium (Foi utilizado appium desktop)
 
 2 - Acessar diretorio projeto "src\main\java\runner\Runner.java"
